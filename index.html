@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Google Account</title>
+    <link rel="stylesheet" href="C:\Users\Samsung\Desktop\CUTIAN proj.html\pro.css" />
+</head>
+<body>
+    <style> 
+       body {
+    background-color:red;
+    border: 5px dotted white;
+    animation-name:bodycolor;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
+@keyframes bodycolor{
+    0% { background-color:red;}
+    20% { background-color:orange;}
+    35% { background-color:yellow;}
+    50% { background-color:green;}
+    70% { background-color:blue;}    
+    85% { background-color:indigo;}
+    100% { background-color:violet;}
+    
+}
+.container {
+    width: 700px;
+    height: 600px;
+    margin: 50px auto;
+    border-style: solid;
+    border-color: rgb(223, 223, 223);
+    border-width: 1px;
+    border-radius: 7px;
+    padding: 50px;
+}
+    /*style kolom kiri*/
+.kiri {
+    width: 400px;
+    float: left;
+}
+    /*style kolom kanan*/
+.kanan {
+    width: 300px;
+    float: right;
+}
+    /*style text*/
+.f1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.f2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9pt;
+    color: rgb(117, 116, 116);
+    margin-bottom: 20px;
+    margin-left: 11px;
+    margin-top: 5px;
+}
+.f3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #2b7cf5;
+    margin-bottom: 50px;
+}
+.f4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+}
+.f5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* font-weight: bold; */
+
+    /* color: #2b7cf5; */
+    margin-bottom: 50px;
+}
+
+    /*style input*/
+input {
+    width: 160px;
+    height: 10px;
+    padding: 12px 10px;
+    margin-right: 6px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 4px;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 12pt;
+}
+.atas {
+    margin-bottom: 30px;
+}
+.img2 {
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+}
+
+        </style> 
+    <section class="container">
+        <section class="kiri">
+            <img src="propic.png" width="75px" height="auto">
+            <div class="f1">Create your Google Account</div>
+            <div>
+                <form>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name" class="atas"/>
+                    <input type="text" id="Lname" name="lastname" placeholder="Last Name"/><br/>
+                    <input type="text" id="Uname" name="username" placeholder="User Name" style="width: 353px;">
+                    <div class="f2">You can use letters, numbers & period</div>
+                    <div class="f3">Use my current email address istead</div>
+                    <input type="password" id="Password" name="password" placeholder="Password"/>
+                    <input type="password" id="Confirm" name="confirm" placeholder="Confirm"/><br/>
+                    <div class="f2">Use 8 more characters with a mix of letters, number & symbols</div>
+                </form>
+            </div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Show Password</label><br>
+            <div class="f3">sign instead</div>
+            <button class="f5" type="button">Next</button>
+        </section>
+        <section class="kanan"><img src="propic.png" class="img2" width="250px"></section>
+        <div class="f4">One account. All of Google working for you.</div>
+    </section>
+</body>
+</html>
